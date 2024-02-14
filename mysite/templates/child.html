@@ -1,0 +1,23 @@
+{% extends "simple.html" %}
+<!---->
+{% load static %}
+<!---->
+{% block content %}
+<!---->
+{% for entry in blog_entries %}
+<h2>{{ entry.title }}</h2>
+<p>{{ entry.body }}</p>
+<ul>
+  <li>{{ entry.list }}</li>
+  <li>{{ entry.list2 }}</li>
+  <li>{{ entry.list3 }}</li>
+</ul>
+{% endfor %}
+<!---->
+{% block registration_form %}
+<!---->
+{% include 'registration/signup.html' %}
+<!---->
+{% endblock %}
+<!---->
+{% endblock %}

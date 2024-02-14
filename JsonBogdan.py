@@ -34,3 +34,6 @@ with open('proba.json', 'w') as file:
     json.dump(data, file, indent=2)
 
 print(data)
+
+print(bool)
+print(dir(bool))
